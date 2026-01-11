@@ -2,7 +2,7 @@
 version: 2
 
 sources:
-  - name: raw
+  - name: azure_blob
     schema: azure_blob      # use the schema where Fivetran loads your blob data
     tables:
       - name: blob_raw

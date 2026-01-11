@@ -1,1 +1,5 @@
+models:
+  dbx_dbt:
+    +schema: analytics   # All models go to analytics schema
+    +materialized: table
 

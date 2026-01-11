@@ -1,4 +1,3 @@
-
 {{ config(
     catalog = "azure_blob",
     schema='analytics',      -- Explicit schema override (optional)
@@ -13,7 +12,7 @@ WITH base AS (
         email_address,
         modified_date,
         company_name
-    FROM {{ source('raw', 'customer_output') }}  -- raw schema from Fivetran
+    FROM {{ source('azure_blob', 'customer_output') }}  -- raw schema from Fivetran
 )
 
 SELECT

@@ -1,5 +1,5 @@
 models:
   dbx_dbt:
-    +schema: analytics   # All models go to analytics schema
+    +catalog: azure_blob     # Explicitly set catalog
+    +schema: analytics
     +materialized: table
-

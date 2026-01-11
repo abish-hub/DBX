@@ -13,7 +13,7 @@ WITH base AS (
         email_address,
         modified_date,
         company_name
-    FROM {{ source('raw', 'customer_output') }}  -- raw schema from Fivetran
+    FROM {{ source('azure_blob', 'blob_raw') }}  -- raw schema from Fivetran
 )
 
 SELECT

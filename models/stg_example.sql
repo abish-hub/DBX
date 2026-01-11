@@ -1,8 +1,9 @@
+
 {{ config(
-    catalog = "azure_blob",
-    schema='analytics',      -- Explicit schema override (optional)
+    schema='analytics',
     materialized='table'
 ) }}
+
 
 WITH base AS (
     SELECT

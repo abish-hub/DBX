@@ -1,3 +1,5 @@
+name: "dbx_dbt"  
+
 models:
   dbx_dbt:
     +catalog: azure_blob     # Explicitly set catalog

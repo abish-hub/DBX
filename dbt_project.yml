@@ -13,7 +13,6 @@ macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
 models:
-  dbx_dbt:
-    +catalog: azure_blob     # Explicitly set catalog
+  dbx_dbt:     # Explicitly set catalog
     +schema: analytics
     +materialized: table

@@ -3,7 +3,7 @@ version: 2
 
 sources:
   - name: raw
-    schema: azure_blob         # use the schema where Fivetran loads your blob data
+    schema: raw         # use the schema where Fivetran loads your blob data
     tables:
       - name: customer_output
 
